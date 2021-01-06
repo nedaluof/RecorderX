@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">RecorderX</string>
+    <!--Saved Record Bottom Sheet-->
+    <string name="btn_saved_record_label">Saved Records</string>
+    <!--Record Activity-->
+    <string name="txt_user_indicator_start">Hit Record Button To Start Recording</string>
+    <string name="txt_user_indicator_recording">Recording Now .</string>
+    <string name="control_record_btn_label_1">Record</string>
+    <string name="control_record_btn_label_2">Stop</string>
+
+    <!--RecordXServices-->
+    <string name="default_file_name">RecorderX</string>
+
+    <!--Notification-->
+    <string name="notification_recording_txt">Recording..</string>
+    <string name="default_notification_channel_id">RecorderX_Channel</string>
+    <string name="default_notification_channel_name">RecorderX</string>
+
+    <!-- Toasts -->
+    <string name="toast_recording_start">Recording started</string>
+    <string name="toast_recording_finish">Recording saved to</string>
+    <string name="toast_file_delete">%1$s successfully deleted</string>
+    <string name="toast_file_exists">The file %1$s already exists. Please choose a different file name.</string>
+    <string name="play_the_record_btn_des">Play The Record</string>
+    <string name="delete_label">Delete</string>
+    <string name="rename_label">Rename</string>
+    <string name="play_label">Play</string>
+    <string name="media_record_exts">.mp4</string>
+    <string name="no_records_label">No Records Recorded yet</string>
+
+    <string name="alert_delete_fail">Delete Record Fail !</string>
+    <string name="alert_delete_success">The Record Deleted Successfully.</string>
+    <string name="alert_rename_fail">The Record Not Renamed Error occur !!.</string>
+    <string name="alert_rename_success">The Record Renamed Successfully.</string>
+
+    <string name="alert_dialog_rename_title">Rename Record</string>
+    <string name="alert_dialog_rename_btn_ok">OK</string>
+    <string name="alert_dialog_rename_btn_cancel">Cancel</string>
+
+</resources>
