@@ -92,6 +92,7 @@ class RecorderXService : LifecycleService() {
 				filePath = "${this.getAppPath()}/$fileName"
 		}
 
+		@Suppress("UNUSED")
 		private fun startTimer() {
 				Timber.d("startTimer: ")
 				incrementTimerTask = object : TimerTask() {

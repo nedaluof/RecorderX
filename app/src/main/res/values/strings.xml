@@ -19,13 +19,11 @@
     <!-- Toasts -->
     <string name="toast_recording_start">Recording started</string>
     <string name="toast_recording_finish">Recording saved to</string>
-    <string name="toast_file_delete">%1$s successfully deleted</string>
     <string name="toast_file_exists">The file %1$s already exists. Please choose a different file name.</string>
-    <string name="play_the_record_btn_des">Play The Record</string>
     <string name="delete_label">Delete</string>
     <string name="rename_label">Rename</string>
     <string name="play_label">Play</string>
-    <string name="media_record_exts">.mp4</string>
+    <string name="media_record_exist">.mp4</string>
     <string name="no_records_label">No Records Recorded yet</string>
 
     <string name="alert_delete_fail">Delete Record Fail !</string>

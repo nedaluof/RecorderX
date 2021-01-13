@@ -29,4 +29,7 @@ interface RecorderXDao {
 
 		@Query("SELECT * FROM RecordX")
 		fun getAllRecordX(): Flow<List<RecordX>>
+
+		@Query("SELECT * FROM RecordX WHERE filePath = :recordPath")
+		suspend fun getRecordXByPath(recordPath: String): RecordX
 }

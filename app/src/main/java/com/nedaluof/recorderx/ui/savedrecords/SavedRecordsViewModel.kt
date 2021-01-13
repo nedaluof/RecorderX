@@ -12,7 +12,7 @@ import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
 class SavedRecordsViewModel @ViewModelInject constructor(
-		private val repository: RecorderXRepository
+		private val repository: RecorderXRepository,
 ) : ViewModel() {
 
 		private val _records = MutableLiveData<List<RecordX>>()
@@ -39,6 +39,4 @@ class SavedRecordsViewModel @ViewModelInject constructor(
 								}
 				}
 		}
-
-
 }

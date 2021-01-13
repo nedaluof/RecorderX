@@ -1,7 +1,6 @@
 package com.nedaluof.recorderx.ui.savedrecords
 
 import android.os.Bundle
-import android.os.FileObserver
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -31,9 +30,6 @@ class SavedRecordsBottomSheet : BottomSheetDialogFragment() {
 
 		//saved records adapter
 		private var recordsAdapter = RecorderXAdapter()
-
-		//Todo
-		private var observer: FileObserver? = null
 
 		override fun onCreateView(
 				inflater: LayoutInflater,
@@ -90,6 +86,7 @@ class SavedRecordsBottomSheet : BottomSheetDialogFragment() {
 						binding.noRecordsTxt.visibility = View.VISIBLE
 				}
 		}
+
 
 		override fun onDestroyView() {
 				super.onDestroyView()

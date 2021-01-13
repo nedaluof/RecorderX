@@ -1,10 +1,11 @@
+@file:Suppress("EXTENSION_SHADOWED_BY_MEMBER")
+
 package com.nedaluof.recorderx.util
 
 import android.app.Notification
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.app.PendingIntent
-import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
 import android.os.Build
@@ -73,6 +74,9 @@ fun Context.getAppPath(): String =
 		File(this.getExternalFilesDir(null).toString())
 				.absolutePath
 
+fun Context.getAppPathAsFile(): File =
+		File(this.getExternalFilesDir(null).toString())
+
 fun String.formatDate(): String {
 		val indexOfT = this.indexOf("T")
 		val str1 = this.substring(0, indexOfT)
@@ -103,7 +107,9 @@ fun BottomSheetDialogFragment.initBottomSheetBehavior(stateChanged: (Int) -> Uni
 		})
 }
 
-fun Context.startForegroundService( intent: Intent?){
+//Todo: used to run foreground service
+@Suppress("UNUSED")
+fun Context.startForegroundService(intent: Intent?) {
 		if (Util.SDK_INT >= 26) {
 				this.startForegroundService(intent)
 		} else {

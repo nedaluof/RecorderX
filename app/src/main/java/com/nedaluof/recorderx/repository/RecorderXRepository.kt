@@ -1,6 +1,5 @@
 package com.nedaluof.recorderx.repository
 
-import com.google.android.exoplayer2.util.Util
 import com.nedaluof.recorderx.db.RecorderXDao
 import com.nedaluof.recorderx.model.RecordX
 import com.nedaluof.recorderx.model.Result
@@ -47,6 +46,16 @@ class RecorderXRepository @Inject constructor(
 						Result.success(true)
 				} catch (e: Exception) {
 						Timber.d("updateRecord: ${e.message!!}")
+						Result.error(null, e.message!!)
+				}
+		}
+
+		suspend fun getRecordXByRecordXPath(recordxPath: String): Result<RecordX> {
+				return try {
+						val foundRecordX = recorderXDao.getRecordXByPath(recordxPath)
+						Result.success(foundRecordX)
+				} catch (e: Exception) {
+						Timber.d("getRecordXByRecordPath: ${e.message!!}")
 						Result.error(null, e.message!!)
 				}
 		}

@@ -42,8 +42,12 @@ class RecorderXActivity : AppCompatActivity() {
 				)
 		}
 
+		//view model
+
+
+
 		//view binding
-		lateinit var binding: ActivityRecorderxBinding
+		private lateinit var binding: ActivityRecorderxBinding
 
 		override fun onCreate(savedInstanceState: Bundle?) {
 				super.onCreate(savedInstanceState)
@@ -52,6 +56,7 @@ class RecorderXActivity : AppCompatActivity() {
 				initChronometer()
 				binding.controlRecordBtn.setOnClickListener { askPermission() }
 				binding.savedRecordBtn.setOnClickListener { showSavedRecords() }
+
 		}
 
 		private fun askPermission() {
